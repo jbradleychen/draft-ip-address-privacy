@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-07-11T00:28:38.176268+00:00",
+  "timestamp": "2021-07-13T00:29:58.325148+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -111,26 +111,68 @@
       "id": "MDExOlB1bGxSZXF1ZXN0NjgxNDEyMzc1",
       "title": "Edits",
       "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/2",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "sysrqb",
       "authorAssociation": "NONE",
       "assignees": [],
       "labels": [],
       "body": "Some small edits and started filling in some of the empty sections. I'm happy to get feedback/suggestions on improvements.",
       "createdAt": "2021-07-01T03:32:12Z",
-      "updatedAt": "2021-07-01T03:32:12Z",
+      "updatedAt": "2021-07-12T16:53:24Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "514b47d2884a0991bc39bb529de7c987541463c3",
       "headRepository": "sysrqb/draft-ip-address-privacy",
       "headRefName": "edits",
       "headRefOid": "26dab3d1f2bded60f8cb8c8df2c25e08c3801d40",
+      "closedAt": "2021-07-12T16:53:24Z",
+      "mergedAt": "2021-07-12T16:53:24Z",
+      "mergedBy": "saradickinson",
+      "mergeCommit": {
+        "oid": "e97c49ab03c295eebb1dc4310e1e1d6db0318e6c"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "MDExOlB1bGxSZXF1ZXN0Njg4MDkxNTY2",
+      "title": "Edits2",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/3",
+      "state": "OPEN",
+      "author": "sysrqb",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "5748b25 was tagged as `draft-ip-address-privacy-considerations-00`. 2576050 fills in some more sections and attempts making the existing text more understandable.",
+      "createdAt": "2021-07-12T18:57:22Z",
+      "updatedAt": "2021-07-12T20:22:51Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "e97c49ab03c295eebb1dc4310e1e1d6db0318e6c",
+      "headRepository": "sysrqb/draft-ip-address-privacy",
+      "headRefName": "edits2",
+      "headRefOid": "257605041aa21f795ecb333ee24b4137f2c40b3e",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzA0NTA5NjE0",
+          "commit": {
+            "abbreviatedOid": "2576050"
+          },
+          "author": "chris-wood",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2021-07-12T20:22:51Z",
+          "updatedAt": "2021-07-12T20:22:51Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
