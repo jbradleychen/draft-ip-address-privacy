@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-07-20T00:27:58.883013+00:00",
+  "timestamp": "2021-07-22T00:28:16.935265+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -173,6 +173,32 @@
           "comments": []
         }
       ]
+    },
+    {
+      "number": 4,
+      "id": "MDExOlB1bGxSZXF1ZXN0Njk0MjE0OTgy",
+      "title": "Luigi's contribution",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4",
+      "state": "OPEN",
+      "author": "ggx",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Hereafter a list of the main changes. IMHO with these changes the draft is in good shape to ask PEARG community if the document is going in the right direction. Hopefully it is and we can later add more text to the different sections. \r\n\r\n- Added several references\r\n- Added subsection 3.3 on law issues\r\n- Bootstrapped section 3.1\r\n- Added text section 3.2\r\n- Proposed content for 3.4\r\n- Added text and revised section 4.1",
+      "createdAt": "2021-07-21T09:40:27Z",
+      "updatedAt": "2021-07-21T09:40:27Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "e97c49ab03c295eebb1dc4310e1e1d6db0318e6c",
+      "headRepository": "ggx/draft-ip-address-privacy",
+      "headRefName": "main",
+      "headRefOid": "6ec113adcb79553214a1c7a59733a673c71a692e",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": []
     }
   ]
 }
