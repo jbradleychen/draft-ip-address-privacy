@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-07-25T00:28:07.487940+00:00",
+  "timestamp": "2021-07-27T00:28:14.052248+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -181,24 +181,26 @@
       "id": "MDExOlB1bGxSZXF1ZXN0Njk0MjE0OTgy",
       "title": "Luigi's contribution",
       "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "ggx",
-      "authorAssociation": "NONE",
+      "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": "Hereafter a list of the main changes. IMHO with these changes the draft is in good shape to ask PEARG community if the document is going in the right direction. Hopefully it is and we can later add more text to the different sections. \r\n\r\n- Added several references\r\n- Added subsection 3.3 on law issues\r\n- Bootstrapped section 3.1\r\n- Added text section 3.2\r\n- Proposed content for 3.4\r\n- Added text and revised section 4.1",
       "createdAt": "2021-07-21T09:40:27Z",
-      "updatedAt": "2021-07-24T12:07:25Z",
+      "updatedAt": "2021-07-26T09:38:15Z",
       "baseRepository": "ShivanKaul/draft-ip-address-privacy",
       "baseRefName": "main",
       "baseRefOid": "64a4b11ee98ef1a9e0774f962b12433b9bd94df2",
       "headRepository": "ggx/draft-ip-address-privacy",
       "headRefName": "main",
       "headRefOid": "ff7b7f8bd3d539bc44c8202276088041da4d14a2",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2021-07-26T09:38:14Z",
+      "mergedAt": "2021-07-26T09:38:14Z",
+      "mergedBy": "saradickinson",
+      "mergeCommit": {
+        "oid": "78699b7850318e0fdddfabd03166acb9a6d3e304"
+      },
       "comments": [
         {
           "author": "saradickinson",
@@ -209,14 +211,14 @@
         },
         {
           "author": "ggx",
-          "authorAssociation": "NONE",
+          "authorAssociation": "COLLABORATOR",
           "body": "Hi,\n\nI\u2019ll have a look during the weekend\n\nCiao\n\nL.\n\n\n> On 23 Jul 2021, at 18:52, Sara Dickinson ***@***.***> wrote:\n> \n> \n> @saradickinson commented on this pull request.\n> \n> In draft-ip-address-privacy-considerations.md <https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4#discussion_r675704013>:\n> \n> >  \n> -Commerical VPNs offer a layer of indirection between the user and the destination, however if the VPN endpoint's IP address is static then this simply substitutes one address for another. In addition, commerial VPNs replace tracking across sites with a single company that may track their users' activities.\n> +## Mitigations for IP address tracking\n> Most conflicts with Matthew's update are in this section\n> \n> \u2014\n> You are receiving this because you were mentioned.\n> Reply to this email directly, view it on GitHub <https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4#pullrequestreview-713912398>, or unsubscribe <https://github.com/notifications/unsubscribe-auth/AB5HQCUYSTE7ERKOQAIDRHTTZGM4HANCNFSM5AXSZNRA>.\n> \n\n",
           "createdAt": "2021-07-24T06:43:55Z",
           "updatedAt": "2021-07-24T06:43:55Z"
         },
         {
           "author": "ggx",
-          "authorAssociation": "NONE",
+          "authorAssociation": "COLLABORATOR",
           "body": "Hi,\n\nI solved all the conflicts adjusting the text as needed.\nthe repository is now up to date and clean.\n\nCiao\n\nL.\n\n\n> On 24 Jul 2021, at 08:43, Luigi Iannone ***@***.***> wrote:\n> \n> Hi,\n> \n> I\u2019ll have a look during the weekend\n> \n> Ciao\n> \n> L.\n> \n> \n>> On 23 Jul 2021, at 18:52, Sara Dickinson ***@***.*** ***@***.***>> wrote:\n>> \n>> \n>> @saradickinson commented on this pull request.\n>> \n>> In draft-ip-address-privacy-considerations.md <https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4#discussion_r675704013>:\n>> \n>> >  \n>> -Commerical VPNs offer a layer of indirection between the user and the destination, however if the VPN endpoint's IP address is static then this simply substitutes one address for another. In addition, commerial VPNs replace tracking across sites with a single company that may track their users' activities.\n>> +## Mitigations for IP address tracking\n>> Most conflicts with Matthew's update are in this section\n>> \n>> \u2014\n>> You are receiving this because you were mentioned.\n>> Reply to this email directly, view it on GitHub <https://github.com/ShivanKaul/draft-ip-address-privacy/pull/4#pullrequestreview-713912398>, or unsubscribe <https://github.com/notifications/unsubscribe-auth/AB5HQCUYSTE7ERKOQAIDRHTTZGM4HANCNFSM5AXSZNRA>.\n>> \n> \n\n",
           "createdAt": "2021-07-24T11:57:14Z",
           "updatedAt": "2021-07-24T11:57:14Z"
@@ -289,7 +291,7 @@
             "abbreviatedOid": "ff7b7f8"
           },
           "author": "ggx",
-          "authorAssociation": "NONE",
+          "authorAssociation": "COLLABORATOR",
           "state": "COMMENTED",
           "body": "",
           "createdAt": "2021-07-24T11:55:37Z",
