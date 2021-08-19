@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-08-17T00:28:29.880368+00:00",
+  "timestamp": "2021-08-19T00:25:03.406874+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -49,7 +49,56 @@
       "color": "ffffff"
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "number": 8,
+      "id": "MDU6SXNzdWU5NzMwNjk0MjQ=",
+      "title": "Define cross-site versus same-site privacy risks",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/8",
+      "state": "OPEN",
+      "author": "bslassey",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Fingerprinting in general and IP addresses in particular can be used to identify users both across sites and within a single website. IP Privacy and anti-fraud and abuse solutions will vary greatly based on which of these privacy risks we are attempting to address.\r\n\r\nMy suggestion is to focus on preventing cross-site re identification and tracking but to keep same-site re-identification and tracking out of scope for this document. WDYT?",
+      "createdAt": "2021-08-17T21:11:49Z",
+      "updatedAt": "2021-08-17T21:11:49Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 9,
+      "id": "MDU6SXNzdWU5NzM2OTM4OTk=",
+      "title": "Define categories of anti-abuse patterns",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/9",
+      "state": "OPEN",
+      "author": "bslassey",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "At a very broad level, I believe there are two forms of abuse against a single system that an IP privacy solution must consider. The first is a small set of attackers pretending to be many to prevent their abuse from being detected and blocked, which is generally the case when it comes to Denial of Service attacks (which is why distributed Denial of Service is a useful attack pattern). \r\n\r\nThe second category is when an attacker is attempting to impersonate a victim. This is the case with credential theft in general and can be protected against with technologies such as WebAuthn and techniques such as 2FA. \r\n\r\nBeing specific about the types of abuse will help us determine the types of preventative measures that may be appropriate.\r\n\r\nI will note that these two categories are intentionally scoped to a single system. There is a third broad category where independant systems can use IP addresses as identifiers to warn others of threats. rfc5782 is one example of a standardized system to share such threat intelligence. This would also include tying an IP address to a real world identity.\r\n\r\nAnd of course if there are other broad categories I'm missing, we should identify and define them.",
+      "createdAt": "2021-08-18T13:54:23Z",
+      "updatedAt": "2021-08-18T13:54:23Z",
+      "closedAt": null,
+      "comments": []
+    },
+    {
+      "number": 10,
+      "id": "MDU6SXNzdWU5NzM2OTQyOTk=",
+      "title": "Add rough geolocation as use case for IP",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/10",
+      "state": "OPEN",
+      "author": "bslassey",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "IP addresses are used productively in the case of tailoring content to the user's rough geolocation.  There are probably many uses of this rough geolocation information, but two that come immediately to mind are conforming to local laws and providing locally relevant content (for example: a merchant's website showing the nearest physical store, a search engine showing local coffee shops when a user searches for \"coffee shop\" or a news site showing locally relevant news). ",
+      "createdAt": "2021-08-18T13:54:45Z",
+      "updatedAt": "2021-08-18T13:54:45Z",
+      "closedAt": null,
+      "comments": []
+    }
+  ],
   "pulls": [
     {
       "number": 1,
