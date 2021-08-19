@@ -5,8 +5,8 @@
 Network Working Group                                          M. Finkel
 Internet-Draft                                           The Tor Project
 Intended status: Informational                                L. Iannone
-Expires: 27 January 2022                                          Huawei
-                                                            26 July 2021
+Expires: 20 February 2022                                         Huawei
+                                                          19 August 2021
 
 
                    IP Address Privacy Considerations
@@ -49,7 +49,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 January 2022.
+   This Internet-Draft will expire on 20 February 2022.
 
 Copyright Notice
 
@@ -100,7 +100,7 @@ Table of Contents
 
    Tracking of user IP addresses is common place on the Internet today,
    and is particularly widely used in the context of anti-abuse, e.g.
-   anti-fraud, DDoS management child protection activities.  IP
+   anti-fraud, DDoS management, child protection activities.  IP
    addresses are currently used as a source of "reputation" in
    conjunction with other signals to protect against malicious traffic,
    since they are a relatively stable identifier of the origin of a
@@ -113,7 +113,7 @@ Table of Contents
    technologies exist today to allow users to hide their IP address to
    avoid such tracking, e.g.  VPNs ([VPNCMP1], [VPNCMP2]) or Tor ([TOR],
    [VPNTOR]).  Several new technologies are also emerging in the
-   landscape e.g.  Gnatcatcher [GNATCATCHER], Apple Private Relay
+   landscape e.g.  Gnatcatcher [GNATCATCHER], Apple iCloud Private Relay
    [APPLEPRIV] and Oblivious technologies (OHTTP
    [I-D.thomson-http-oblivious], ODoH [I-D.pauly-dprive-oblivious-doh]).
 
@@ -168,25 +168,25 @@ Table of Contents
 
 3.1.2.  DDoS and Botnets
 
-   Cyber-attackers can leverage on the good reputation of an IP address
-   to carry out specific attacks that wouldn't work otherwise.  Main
+   Cyber-attackers can leverage the good reputation of an IP address to
+   carry out specific attacks that wouldn't work otherwise.  Main
    examples are Distributed Denial of Service (DDoS) attacks carried out
-   spoofing a trusted (i.e., having good reputation) IP address (which
-   may or may not be the victim of the attack) so that the servers used
-   to generate the DDoS traffic actually respond to the attackers
-   trigger (i.e., spoofed packets).  Similarly Botnets may use spoofed
-   addresses in order to gain access and attack services that would not
-   be otherwise reachable.
+   by spoofing a trusted (i.e., having good reputation) IP address
+   (which may or may not be the victim of the attack) so that the
+   servers used to generate the DDoS traffic actually respond to the
+   attackers trigger (i.e., spoofed packets).  Similarly botnets may use
+   spoofed addresses in order to gain access and attack services that
+   otherwise would not be reachable.
 
 3.2.  Privacy implications of IP addresses
 
-   IP addresses are sent in clear throughout the packet journey over the
-   Internet.  As such, any observer along the path can pick it up and
-   use it for various tracking purposes.  Beside basic information about
-   the network or the device, it is possible to associate an IP address
-   to an end user, hence, the relevance of of IP addresses for user
-   privacy.  A very short list of information about user, device, and
-   network that can be obtained via the IP address.
+   IP addresses are sent in the clear throughout the packet journey over
+   the Internet.  As such, any observer along the path can pick it up
+   and use it for various tracking purposes.  Beside basic information
+   about the network or the device, it is possible to associate an IP
+   address to an end user, hence, the relevance of of IP addresses for
+   user privacy.  A very short list of information about user, device,
+   and network that can be obtained via the IP address.
 
    *  Determine who owns and operates the network.  Searching the WHOIS
       database using an IP address can provide a range of information
@@ -260,9 +260,9 @@ Table of Contents
       suffers from degraded performance.  In addition, correct
       application integration is difficult and not common.
 
-   *  Address anonymization (e.g.  [GNATCATCHER] and similar): {
+   *  Address anonymization (e.g.  [GNATCATCHER] and similar):
 
-      -  {GNATCATCHER}} is a single-hop proxy system providing more
+      -  [GNATCATCHER] is a single-hop proxy system providing more
          protection against third-party tracking than a traditional
          commercial VPN.  However, its design maintains the industry-
          standard reliance on IP addresses for anti-abuse purposes and
@@ -274,16 +274,10 @@ Table of Contents
          level of protection somewhere between a commercial VPN and Tor.
 
    *  Recent interest has resulted in new protocols such as Oblivious
-      DNS (ODoH (https://www.ietf.org/staging/draft-pauly-oblivious-doh-
-      02.html)) and Oblivious HTTP (OHTTP
-      (https://www.ietf.org/archive/id/draft-thomson-http-oblivious-
-      00.html)).  While they both prevent tracking by individual
-      parties, they are not intended for the general-purpose web
-      browsing use case.
-
-   *  Finally, iCloud Private Relay is described as using two proxies
-      between the client and server, and it would provide a level of
-      protection somewhere between a commercial VPN and Tor.
+      DNS (ODoH ({{I-D.pauly-oblivious-doh-02.html}})) and Oblivious
+      HTTP (OHTTP ({{I-D.thomson-http-oblivious}})).  While they both
+      prevent tracking by individual parties, they are not intended for
+      the general-purpose web browsing use case.
 
    *  Temporary addresses
 
