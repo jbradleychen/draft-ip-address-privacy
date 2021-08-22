@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-08-19T00:25:03.406874+00:00",
+  "timestamp": "2021-08-22T00:27:55.614913+00:00",
   "repo": "ShivanKaul/draft-ip-address-privacy",
   "labels": [
     {
@@ -51,6 +51,113 @@
   ],
   "issues": [
     {
+      "number": 5,
+      "id": "MDU6SXNzdWU5NzIxNjU5NDc=",
+      "title": "Counterabuse: avoiding benefits to bad actors. ",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/5",
+      "state": "OPEN",
+      "author": "jbradleychen",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "Privacy providing technologies can support good ends (protecting the average user\u2019s privacy) and bad (providing cover for criminal activity). What principles and guidelines can we establish to support good user privacy while not making it harder to manage abuse?",
+      "createdAt": "2021-08-16T23:12:00Z",
+      "updatedAt": "2021-08-20T17:51:01Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "sysrqb",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Do you have any examples of (good) principles and guidelines in other areas that we can use as a framework for specifying them within this domain?",
+          "createdAt": "2021-08-19T21:33:09Z",
+          "updatedAt": "2021-08-19T21:33:09Z"
+        },
+        {
+          "author": "jbradleychen",
+          "authorAssociation": "NONE",
+          "body": "Private interactions are interactions where a user has a reasonable expectation of privacy, for example, a private communication between consenting adults. These merit strong privacy protections.\r\n\r\nPublic interactions are interactions where a user acts in full public view, for example, publishing an article in a newspaper. Individuals acting in public do not expect their actions to be private. However the public expects accountability for public safety when individuals act in public.\r\n\r\nSystems that layer privacy onto public interactions create public safety risk while disrupting accountability. Such systems disrupt the incentive for socially responsible behavior, making them dangerous.\r\n\r\nA library is an example of a system that has evolved to apply privacy and accountability. Users can consult library materials with a useful measure of anonymity and privacy. At the same time, the material in the library almost alway practices identity transparency of authors and publishers, and it is not okay for the contents of the library to be anonymously modified (e.g. updating the contents of a book), or slanted through censorship or other manipulation.\r\n\r\nAnother example is academic publishing. Consider how transparent identity in academic publishing supports the advancement of science. Would academic publishing work if it were anonymous? ",
+          "createdAt": "2021-08-20T17:51:01Z",
+          "updatedAt": "2021-08-20T17:51:01Z"
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "id": "MDU6SXNzdWU5NzIxNjY4NzI=",
+      "title": "Counterabuse: law enforcement support.",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/6",
+      "state": "OPEN",
+      "author": "jbradleychen",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "What support should the Internet provide to support legitimate law enforcement inquiries and referrals?\r\n",
+      "createdAt": "2021-08-16T23:13:47Z",
+      "updatedAt": "2021-08-21T21:04:27Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "sysrqb",
+          "authorAssociation": "COLLABORATOR",
+          "body": "The framing of this question makes answering it complicated. A motivated attacker/criminal/actor will always find ways to obscure their identity and mislead investigators. A service should not collect more information than it needs \"just in case\" under the assumption that information could support law enforcement in the future.\r\n\r\nInternet protocols and service providers should practice data minimization, as per [RFC 6973](https://datatracker.ietf.org/doc/html/rfc6973#section-6.1).\r\n\r\nI'll try posing a slightly different question in the hope of finding a satisfactory answer: What information about users do service providers need to successfully provide their service, and protect themselves, that can also be used by law enforcement?\r\n\r\nThe answer will vary depending on the service, but enumerating the different types of services and the specific information they need will be helpful.",
+          "createdAt": "2021-08-20T01:58:13Z",
+          "updatedAt": "2021-08-20T01:58:13Z"
+        },
+        {
+          "author": "jbradleychen",
+          "authorAssociation": "NONE",
+          "body": "\"can also be used by law enforcement\" seems too weak to me. Your framing seems to rely on the assumption of a fair-minded user, e.g. that users are generally not abusive. That assumption collapses when services become very large, and effectively include everybody, which means they include all the criminals, criminals who are statistically insignificant but do disproportionate harm to the public and the platforms.\r\n\r\nYour reframing equates success with the success and safety of providers. Can you reformulate it to recognize the importance of public safety?\r\n\r\nYour reframing ignores the reality of corrupt and lawless service providers, whose success should not be a priority.",
+          "createdAt": "2021-08-20T17:39:14Z",
+          "updatedAt": "2021-08-20T22:45:46Z"
+        },
+        {
+          "author": "sysrqb",
+          "authorAssociation": "COLLABORATOR",
+          "body": "These are good points. The reframing I chose specifically equates success in terms of the service provider and user, without providing exceptional access for law enforcement. Public safety is a much larger scope than I originally envisioned.\r\n\r\nThe framing should capture the importance of public safety, malicious actors, and potentially corrupt and lawless service provides. Can you define/describe public safety within this context and the responsibility (you see) service providers have?\r\n",
+          "createdAt": "2021-08-21T00:14:38Z",
+          "updatedAt": "2021-08-21T00:14:38Z"
+        },
+        {
+          "author": "jbradleychen",
+          "authorAssociation": "NONE",
+          "body": "Hmm; I think we should try to realize online systems that are at least as private and as safe as the offline alternatives, as much as offline alternatives exist. If we do that, then the public gets better privacy and safety by moving online, avoiding regressions.\r\n\r\nIf this makes sense to you, then we could think about what tech has done for privacy, and what it has done for safety.",
+          "createdAt": "2021-08-21T21:04:27Z",
+          "updatedAt": "2021-08-21T21:04:27Z"
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "id": "MDU6SXNzdWU5NzIxNzA0MDQ=",
+      "title": "Counterabuse: multi-platform threat models",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/7",
+      "state": "OPEN",
+      "author": "jbradleychen",
+      "authorAssociation": "NONE",
+      "assignees": [],
+      "labels": [],
+      "body": "As siloed defenses against abuse have improved, abusers have moved to multi-platform threat models. For example, a public discussion platform with a culture of anonymity may redirect traffic to YouTube as a video library, bypassing YouTube defenses that otherwise reduce exposure of potentially harmful content. Similarly, a minor could be solicited by an adult impersonating a child on a popular social media platform, then redirected to a smaller, less established and less defended platform where illegal activity could occur. There are many such cross-platform abuse models and they cause significant public harm. In a world with strong cross-platform privacy barriers, how should such threats be managed?\r\n",
+      "createdAt": "2021-08-16T23:20:49Z",
+      "updatedAt": "2021-08-20T17:25:18Z",
+      "closedAt": null,
+      "comments": [
+        {
+          "author": "sysrqb",
+          "authorAssociation": "COLLABORATOR",
+          "body": "I realize these are only two examples, but digging into them may be helpful.\r\n\r\nFor the first concern about platforms redirecting to hosted content, can you provide more details about why IP addresses are helpful in mitigating this threat? If I understand correctly, at a minimum, the service provider (Youtube) only see the client's IP address and possibly a referrer. In a world with IP address privacy, the service won't see the client's true IP address and the browser may truncate the referrer. Are there specific mitigations you already have in place for this situation that you can describe?\r\n\r\nFor the second example, while these platforms should provide some oversight/protection within their walls, they cannot and should not be responsible for potential harm that occurs on other sites. In general, protecting a child is their guardian/parent's responsibility, and this is the case regardless of which site they're on.\r\n\r\nBased on these two examples, I'm not sure there is a one-size-fits-all answer for this problem. ",
+          "createdAt": "2021-08-20T02:38:34Z",
+          "updatedAt": "2021-08-20T02:38:34Z"
+        },
+        {
+          "author": "jbradleychen",
+          "authorAssociation": "NONE",
+          "body": "For the YouTube redirect, YouTube will see a redirect from the discussion platform. Without a proxy, YouTube could better estimate the number of distinct users, geographic distribution, and other useful demographics. This isn't really about specific mitigations, it is more about the investigation that supports understanding a threat and designing specific mitigations. In the extreme, abuse fighting is reduced to waiting for a disaster and then cleaning up the mess. This is not a good outcome for public safety. There is no single counterabuse signal more important than IP address.\r\n\r\nThe above assumes high-traffic volumes. I think the second example is representative of the low-traffic case. \r\n\r\nFor the second example, parents have a responsibility for being responsible parents. Governments have a responsibility for making responsible parenting possible. When the environment for parenting includes features that are particularly dangerous, and that are harming children, at a certain point a legitimate government is compelled to mitigate the danger, lest they lose the confidence of the people. Such government interventions can avoided if the systems in question self regulate. The radio and the printing press are examples of revolutionary technologies that contributed to tremendous disruption and later became safer through regulation and through industry norms.\r\n\r\nThese threat models represent significant public safety risks and harms. Achieving safety is not so simple as IP address transparency, as we have that today, and things are still getting worse. That is driving the industry towards systems that are less available for anonymous, unverified users, a bad outcome for privacy. To preserve anonymous service access we need to recognize and mitigate features that threaten privacy or safety.",
+          "createdAt": "2021-08-20T17:25:18Z",
+          "updatedAt": "2021-08-20T17:25:18Z"
+        }
+      ]
+    },
+    {
       "number": 8,
       "id": "MDU6SXNzdWU5NzMwNjk0MjQ=",
       "title": "Define cross-site versus same-site privacy risks",
@@ -87,16 +194,31 @@
       "id": "MDU6SXNzdWU5NzM2OTQyOTk=",
       "title": "Add rough geolocation as use case for IP",
       "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/issues/10",
-      "state": "OPEN",
+      "state": "CLOSED",
       "author": "bslassey",
-      "authorAssociation": "NONE",
+      "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
       "body": "IP addresses are used productively in the case of tailoring content to the user's rough geolocation.  There are probably many uses of this rough geolocation information, but two that come immediately to mind are conforming to local laws and providing locally relevant content (for example: a merchant's website showing the nearest physical store, a search engine showing local coffee shops when a user searches for \"coffee shop\" or a news site showing locally relevant news). ",
       "createdAt": "2021-08-18T13:54:45Z",
-      "updatedAt": "2021-08-18T13:54:45Z",
-      "closedAt": null,
-      "comments": []
+      "updatedAt": "2021-08-19T21:25:45Z",
+      "closedAt": "2021-08-19T21:25:45Z",
+      "comments": [
+        {
+          "author": "sysrqb",
+          "authorAssociation": "COLLABORATOR",
+          "body": "I'd like to explicitly subdivide this further: 1) legal requirements, and 2) usability.\r\n\r\nOn the usability aspect, I can see using (something like) a client-hint instead. Client-side software/user-agent will need to determine the correct location (or ask the user), but we shouldn't be bound to using IP addresses as a passive signal for achieving this.\r\n\r\nOn the other hand, conforming to regional legal restrictions requires nuance, and I won't pretend to be an expert in this area. We should gain an understanding of the limits of these laws and under what circumstances they apply. Specifically, what exact information does a service operator need such that they change how they handle requests to follow the law. And, further, is a client-hint sufficient in most cases, as well?",
+          "createdAt": "2021-08-19T18:20:30Z",
+          "updatedAt": "2021-08-19T18:20:30Z"
+        },
+        {
+          "author": "sysrqb",
+          "authorAssociation": "COLLABORATOR",
+          "body": "Actually, taking a step back from my above comment, we can make sure these use cases are covered in the draft, and then we can dive into answering some of those more specific questions later.",
+          "createdAt": "2021-08-19T18:36:16Z",
+          "updatedAt": "2021-08-19T18:36:16Z"
+        }
+      ]
     }
   ],
   "pulls": [
@@ -355,6 +477,109 @@
           ]
         }
       ]
+    },
+    {
+      "number": 11,
+      "id": "MDExOlB1bGxSZXF1ZXN0NzE2MjUxMjA1",
+      "title": "Specify (anti-)abuse",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/11",
+      "state": "OPEN",
+      "author": "sysrqb",
+      "authorAssociation": "COLLABORATOR",
+      "assignees": [],
+      "labels": [],
+      "body": "This is based on a work-in-progress patch I already had. #9 describes different categories:\r\n1. an attacker compromising/utilizing a large number of machines (botnet) to perform an attack (DDoS) against a service\r\n2. an attacker attempting to impersonate a victim (account takeover/credential theft)\r\n3. collaborative anti-abusive and threat intelligence sharing\r\n\r\nThis patch takes a slightly different approach and enumerates more specific classes of attack/malicious activity. I'm not tied to this, but I think being more specific now will help us in the future.",
+      "createdAt": "2021-08-19T20:47:56Z",
+      "updatedAt": "2021-08-20T02:43:02Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "4c3b93a4508ff8d953fa125879ad70a44c0c1d4f",
+      "headRepository": "sysrqb/draft-ip-address-privacy",
+      "headRefName": "issue10",
+      "headRefOid": "2446fa8f56eded89c8eccbaf049693f7855e4a91",
+      "closedAt": null,
+      "mergedAt": null,
+      "mergedBy": null,
+      "mergeCommit": null,
+      "comments": [],
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzM0NDk3Njk3",
+          "commit": {
+            "abbreviatedOid": "2446fa8"
+          },
+          "author": "jbradleychen",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2021-08-19T21:50:51Z",
+          "updatedAt": "2021-08-19T21:50:52Z",
+          "comments": [
+            {
+              "originalPosition": 26,
+              "body": "Also phishing, malware, ransomware\r\nDetecting scaled / coordinated disinformation operations",
+              "createdAt": "2021-08-19T21:50:51Z",
+              "updatedAt": "2021-08-19T21:50:52Z"
+            }
+          ]
+        },
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzM0NDk4Mjgz",
+          "commit": {
+            "abbreviatedOid": "2446fa8"
+          },
+          "author": "jbradleychen",
+          "authorAssociation": "NONE",
+          "state": "COMMENTED",
+          "body": "",
+          "createdAt": "2021-08-19T21:51:51Z",
+          "updatedAt": "2021-08-19T21:51:51Z",
+          "comments": [
+            {
+              "originalPosition": 30,
+              "body": "\"When attackers abuse IP addresses\" this is a funny turn of phrase because you can't use the Internet without using an IP address. ",
+              "createdAt": "2021-08-19T21:51:51Z",
+              "updatedAt": "2021-08-19T21:51:51Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "id": "MDExOlB1bGxSZXF1ZXN0NzE2MjY4MjYw",
+      "title": "Update draft-ip-address-privacy-considerations.md",
+      "url": "https://github.com/ShivanKaul/draft-ip-address-privacy/pull/12",
+      "state": "MERGED",
+      "author": "bslassey",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "adds text for uses of geo-ip, closes #10",
+      "createdAt": "2021-08-19T21:16:52Z",
+      "updatedAt": "2021-08-19T21:25:45Z",
+      "baseRepository": "ShivanKaul/draft-ip-address-privacy",
+      "baseRefName": "main",
+      "baseRefOid": "4c3b93a4508ff8d953fa125879ad70a44c0c1d4f",
+      "headRepository": "bslassey/draft-ip-address-privacy",
+      "headRefName": "patch-2",
+      "headRefOid": "b0e927313f0659d6b4008b1eb63fde14767362b8",
+      "closedAt": "2021-08-19T21:25:45Z",
+      "mergedAt": "2021-08-19T21:25:45Z",
+      "mergedBy": "sysrqb",
+      "mergeCommit": {
+        "oid": "4a25c19ecdc86cb3f2d2b14b74ee0e7506c9d95b"
+      },
+      "comments": [
+        {
+          "author": "sysrqb",
+          "authorAssociation": "COLLABORATOR",
+          "body": "This is better than the patch I'm writing. lgtm. Thanks!",
+          "createdAt": "2021-08-19T21:25:38Z",
+          "updatedAt": "2021-08-19T21:25:38Z"
+        }
+      ],
+      "reviews": []
     }
   ]
 }
